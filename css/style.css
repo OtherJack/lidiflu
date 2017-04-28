@@ -937,7 +937,6 @@ nav > ul > li:first-child {
 
 #catalogue{
     padding:20% 10% 15% 5%;
-
     left:5%;
     width:90%;
     z-index:-1;
@@ -1091,6 +1090,7 @@ nav > ul > li:first-child {
 	color:white;
 	border-color:white;
 	
+	
 }
 
 .btn-p:hover{
@@ -1137,7 +1137,7 @@ nav > ul > li:first-child {
 
 .product {
         display: block;
-        width: 100%;
+        width: 150%;
         height:150%;
         margin-bottom: 15px;
     }
@@ -1196,8 +1196,8 @@ nav > ul > li:first-child {
 .btn-p{
 	display:inline-block;
     width:110px;
-    padding: 5px 5px;
-    margin: 8px 0;
+    left: 50%;
+    
     float: center; 
 	background-color:green;
 	color:white;
