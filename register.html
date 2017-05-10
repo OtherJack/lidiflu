@@ -29,8 +29,8 @@
         <li><a href="news.html">News</a></li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="logIn.html">Log In</a></li>
-        <li><a href="https://en-gb.facebook.com/"><img src="img/fB.png" width="30%" height="30%"></a>
-        <a href="https://twitter.com/?lang=en"><img src="img/Twitter.png" width="30%" height="30%"></a></li>
+        <li><a href="https://en-gb.facebook.com/"><img src="img/fB.png" alt="facebook" width="30%" height="30%"></a>
+        <a href="https://twitter.com/?lang=en"><img src="img/Twitter.png" alt="twitter" width="30%" height="30%"></a></li>
        </ul>
      </li>
    </ul>
@@ -44,29 +44,33 @@
 
         </div>
         
-        <div id="aboutUs">
+        <div id="register">
             
             <h1>Register</h1>
-            
-            <form method="post" id="login">
+			
+			<form id="register" action="php/connect.php" method ="post">
 			
 			<label>First Name:</label>
-			<input type="text" size="40" id="userName" name="fName">
+			<input type="text" size="40" id="firstName" name="firstName">
 			
 			<label>Last Name:</label>
-			<input type="text" size="40" id="userName" name="lName">
+			<input type="text" size="40" id="lastName" name="lastName">
+			
+			<label>Username:</label>
+			<input type="text" size="40" id="userName" name="userName">
 			
 			<label> Email: </label>
 			<input type="email" size="40" id="Email" name="email">
 			
 			<label> Would you like to recieve news and offers? </label>
-			<input type="radio" name="newslist" value="Yes"><b> Yes</b><br>
-            <input type="radio" name="newslist" value="No"><b> No</b><br>
+			<input type="radio" name="newslist" value="Yes" id="news"><b> Yes</b><br>
+            <input type="radio" name="newslist" value="No" id="news"><b> No</b><br>
 			
 			<label> Password: </label>
-			<input type="password" size="40" id="Password" name="psw"><br>
+			<input type="password" size="40" id="password" name="password"><br>
 			
 			<button type="submit">Submit</button><br>
+			
         
             
         </div>

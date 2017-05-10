@@ -4,12 +4,19 @@
     
 }
 
+label{
+    color:#570000;
+}
+
+
 #indexLogo {
     text-align: left;
     float:left;
     height:10%;
     margin-top: 25px;
     font-size: 21px;
+    
+    /* Fade-in effect present on every page */
 
     -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 5s; /* Firefox < 16 */
@@ -406,7 +413,7 @@ nav > ul > li:first-child {
 /*------Background images etc--------------*/
 
 #indexContainer{
-    background:url("img/Wind-Turbine.jpg");
+    background:url("../img/Wind-Turbine.jpg");
     background-repeat: no-repeat;
 	width:100%;
 	min-width: 20%;
@@ -427,7 +434,7 @@ nav > ul > li:first-child {
 
 
 #indexContainer{
-    background:url("img/Wind-Turbine.jpg");
+    background:url("../img/Wind-Turbine.jpg");
     background-repeat: no-repeat;
 	width:100%;
 	min-width: 20%;
@@ -901,8 +908,8 @@ nav > ul > li:first-child {
 /*-------------Log In Page------------------*/
 
 #logIn{
-    padding:15% 10% 15% 15%;
-    left:20%;
+    padding:20% 10% 15% 15%;
+    left:10%;
     width:50%;
     position:absolute;
 }
@@ -917,8 +924,8 @@ nav > ul > li:first-child {
 @media only screen and (max-width:900px){
     
  #logIn{
-    padding:15% 10% 15% 15%;
-    left:20%;
+    padding:70% 10% 0% 0%;
+    left:5%;
     width:50%;
     position:absolute;
 }
@@ -929,6 +936,52 @@ nav > ul > li:first-child {
     text-decoration:underline;
     
 }  
+    
+}
+/*----------------------------------------*/
+
+/*-------------Register Page------------------*/
+
+#register{
+    padding:20% 10% 15% 15%;
+    left:10%;
+    width:50%;
+    position:absolute;
+}
+
+#register h1{
+    color:#6D1923;
+    font-size:36px;
+    text-decoration:underline;
+    
+}
+
+#register label{
+    text-align:center;
+    
+    
+}
+
+@media only screen and (max-width:900px){
+    
+ #register{
+    padding:70% 10% 0% 0%;
+    left:5%;
+    width:50%;
+    position:absolute;
+}
+
+#register h1{
+    color:#6D1923;
+    font-size:36px;
+    text-decoration:underline;
+    
+}  
+
+#register label{
+    text-align:center;
+    
+}
     
 }
 /*----------------------------------------*/
@@ -1263,4 +1316,81 @@ nav > ul > li:first-child {
     background-color: gray;
 }
  
+}
+
+/*-----------------admin--------------------*/
+#app{
+    width:100%;
+    float:center;
+    position:re;
+        -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+    
+ #admin{
+    padding:20% 0% 0% 0%;
+    text-align: center;
+    width:100%;
+    position:absolute;
+        -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+    
+}
+
+#adminlog{
+    visibility: hidden;
+}
+
+
+#admin h1{
+    color:#6D1923;
+    font-size:36px;
+    text-decoration:underline;
+    
+}
+
+@media only screen and (max-width:900px){
+ 
+#app{
+    width:100%;
+    float:center;
+    position:re;
+        -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+    
+ #admin{
+    padding:70% 0% 0% 0%;
+    text-align: center;
+    width:100%;
+    position:absolute;
+        -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+    
+}
+
+#adminlog{
+    visibility: hidden;
+}
+
+
+#admin h1{
+    color:#6D1923;
+    font-size:36px;
+    text-decoration:underline;
+    
+}
+    
 }
