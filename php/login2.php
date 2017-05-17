@@ -24,15 +24,15 @@ if ($conn->connect_error) {
       $row = $result->fetch_assoc();
       
 	     
-	//Checks if the users details are good, and if the user is a Admin or User
+	//Checks if the users details are valid, and if the user is a Admin or User
 
 		 
 			if($row['user']=="Admin"){
-			   header('location:../admin.html');
+			   header('location:rest/index.html');
 			   exit();
 			}
 			else if($row['user']=="User"){
-				header('Location:../catalogue.html');
+				header('Location:rest/catalogue.html');
 				exit();
 			}
 			else 

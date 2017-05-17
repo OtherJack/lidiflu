@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../../img/logo.png" type="image/gif" sizes="16x16">
+    <title>Lidiflu | Admin</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/skeleton.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="read.js"></script>
+    <script src="read-one-product.js"></script>
+    <script src="update.js"></script>
+    <script src="read.js"></script>
+    
+ 
+ 
+</head>
+<body>
+    
+    <div id="indexContainer">
+  
+        <!--Fade-in menu present on every page-->
+        
+        <div id="menuButton">
+        
+        <nav>
+   <ul>
+     <li class="sub-menu-parent">
+       <a href="#">Menu</a>
+       <ul class="sub-menu">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../aboutUs.html">About Us</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="../../news.html">News</a></li>
+        <li><a href="../../contact.html">Contact Us</a></li>
+        <li><a href="../../logIn.html">Log In</a></li>
+        <li><a href="https://en-gb.facebook.com/"><img src="../../img/fB.png" alt="facebook"></a>
+        <a href="https://twitter.com/?lang=en"><img src="../../img/Twitter.png" alt="twitter"></a></li>
+       </ul>
+     </li>
+   </ul>
+ </nav>
+   
+    </div> 
+    
+      <div id="indexLogo">
+
+        <a href="index.html"><img class="carousel" src="../../img/Logo3.png"></a>
+        
+        
+
+        </div>
+ 
+<!-- our app will be injected here -->
+<div id="app">
+    <h1>Product Inventory</h1>
+    <div class="row">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description </th>
+                <th>Price </th>
+                <th>Image</th>
+                <th>More Info</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody id="data">
+                
+                
+            </tbody>
+        </table> 
+        
+    </div>
+    
+    <div class="row">
+        
+        <!-----When this button is clicked, it will load the create product form ----->
+        <a id="createProduct" class="btn btn-primary btn-md" href="#">Add Product</a>
+        
+    </div>
+    
+</div>
+ 
+
+ 
+
+ 
+</body>
+</html>

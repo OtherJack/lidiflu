@@ -31,24 +31,6 @@ label{
     to   { opacity: 1; }
 }
 
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
 #indexLogo img{
     padding:10px 10px 10px 10px;
     float:left;
@@ -76,24 +58,6 @@ label{
     to   { opacity: 1; }
 }
 
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
 #logo img{
     padding:10px 10px 10px 10px;
     float:left;
@@ -107,7 +71,8 @@ label{
     width:100%;
     height:100%;
     border:0;
-    margin:0;
+    margin:-6.9px;
+    
     overflow-x:hidden;
     
 }
@@ -166,6 +131,8 @@ label{
     
 }
 
+/*---------------------------------------*/
+
 /*-------------Menu-----------------*/
 
 #menuButton{
@@ -184,8 +151,12 @@ label{
     
 }
 
+#menuButton img{
+    width:30%;
+    height:30%;
+}
+
 #menuButton ul{
-    float:center;
     text-decoration: none;
     font-size: 20px;
     
@@ -209,7 +180,6 @@ label{
 }
 
 #indexMenuButton ul{
-    float:center;
     text-decoration: none;
     font-size: 20px;
     
@@ -284,7 +254,6 @@ nav > ul > li:first-child {
 @media only screen and (max-width: 900px) {
     
 #menuButton{
-    float: center;
     text-align: center;
     width:110%;
     background-color: #BA2B3C;
@@ -298,15 +267,12 @@ nav > ul > li:first-child {
 }
 
 #menuButton ul{
-    float:center;
     text-decoration: none;
     font-size: 20px;
     
 }
 
 #indexMenuButton{
- 
-    float: center;
     text-align: center;
     width:105%;
     bottom:1px;
@@ -321,7 +287,6 @@ nav > ul > li:first-child {
 }
 
 #indexMenuButton ul{
-    float:center;
     text-decoration: none;
     font-size: 20px;
     
@@ -333,7 +298,7 @@ nav > ul > li:first-child {
 }
 
 .sub-menu { 
-  visibility: hidden; /* hides sub-menu */
+  visibility: hidden;
   opacity: 0;
   position: absolute;
   top: 100%;
@@ -345,16 +310,15 @@ nav > ul > li:first-child {
 }
 
 .sub-menu-parent:hover .sub-menu {
-  visibility: visible; /* shows sub-menu */
+  visibility: visible;
   opacity: 1;
   z-index: 1;
   opacity: 1;
   transform: translateY(0%);
-  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+  transition-delay: 0s, 0s, 0.3s;
   
 }
 
-/* presentational */
 body { 
     padding: 2%; 
     font: 18px/1.4 sans-serif;
@@ -419,7 +383,6 @@ nav > ul > li:first-child {
 	min-width: 20%;
 	height:100%;
 	min-height: 18%;
-	float:center;
 	margin: 0 auto;
 	border: 1px #B5B29D solid;
 	position:fixed;
@@ -429,6 +392,23 @@ nav > ul > li:first-child {
 	
 }
 
+@media only screen and (min-width: 1450px) {
+#indexContainer{
+    background:url("../img/windTurbine2.jpg");
+    background-repeat: no-repeat;
+	width:100%;
+	min-width: 20%;
+	height:100%;
+	min-height: 18%;
+	margin: 0 auto;
+	border: 1px #B5B29D solid;
+	position:fixed;
+	overflow: scroll;
+    margin: 0;
+    padding: 0;
+	
+}
+}
 
 @media only screen and (max-width: 900px) {
 
@@ -440,15 +420,14 @@ nav > ul > li:first-child {
 	min-width: 20%;
 	height:100%;
 	min-height: 18%;
-	float:center;
 	margin: 0 auto;
 	border: 1px #B5B29D solid;
 	position:fixed;
 	overflow: scroll;
 	overflow-x: hidden;
     margin: 0 auto;
-    padding: 0 auto;
-    border:0 auto;
+    padding: 0;
+    border:0;
 	
 }
 
@@ -461,7 +440,6 @@ nav > ul > li:first-child {
 #index{
     padding:20% 10% 15% 5%;
     left:15%;
-    float:center;
     width:50%;
     z-index:-1;
     position:absolute;
@@ -489,25 +467,20 @@ nav > ul > li:first-child {
     
 }
 
+#indexCat{
+    padding:20% 10% 15% 5%;
+    left:5%;
+    width:90%;
+    position:absolute;
+        -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+    
+}
+
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
@@ -535,7 +508,6 @@ nav > ul > li:first-child {
 #aboutUs{
     padding:20% 10% 15% 5%;
     left:15%;
-    float:center;
     width:50%;
     z-index:-1;
     position:absolute;
@@ -548,24 +520,6 @@ nav > ul > li:first-child {
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
@@ -595,24 +549,6 @@ nav > ul > li:first-child {
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
@@ -726,24 +662,6 @@ nav > ul > li:first-child {
     to   { opacity: 1; }
 }
 
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
 #aboutboxes  {
    
     top:10%;
@@ -760,12 +678,10 @@ nav > ul > li:first-child {
 	text-align: center;
 	padding: 0 10px;
 	font-size: 18px;
-	font-weight: 200px;
 	
 }
 
 .bx {
-	display: cell;
 	float:left;
 	width: 50px;
 	height:2px;
@@ -776,7 +692,6 @@ nav > ul > li:first-child {
 .cbox{
 	display: table-cell;
 	position:relative;
-	float:center;
 	width:100%;
 	height:350px;
 	padding:10px 10px 10px 10px;
@@ -787,7 +702,6 @@ nav > ul > li:first-child {
 .cbox2{
 	display: table-cell;
 	position:relative;
-	float:center;
 	width:100%;
 	height:350px;
 	padding:10px 10px 10px 10px;
@@ -796,7 +710,6 @@ nav > ul > li:first-child {
 
 .cbox h3{
 		margin-top: -20px;
-		float:center;
 		width:100%;
 		font-size:20px;
 		text-align:left;
@@ -830,21 +743,17 @@ nav > ul > li:first-child {
 
 #centerbox h1{
 	display: inline-block;
-	vertical-align: left;
 	text-transform: uppercase;
 	text-align: center;
 	padding: 0 10px;
 	font-size: 18px;
-	font-weight: 200px;
 	
 }
 
 .bx {
-	display: cell;
 	float:left;
 	width: 100px;
 	height:2px;
-	vertical-align: left;
 	background-color:#ff5722;
 }	
 
@@ -888,7 +797,6 @@ nav > ul > li:first-child {
 
 .cbox h3{
 		margin-top: -20px;
-		float:center;
 		width:100%;
 		font-size:20px;
 		text-align:left;
@@ -942,43 +850,43 @@ nav > ul > li:first-child {
 
 /*-------------Register Page------------------*/
 
-#register{
+#register2{
     padding:20% 10% 15% 15%;
     left:10%;
     width:50%;
     position:absolute;
 }
 
-#register h1{
+#register2 h1{
     color:#6D1923;
     font-size:36px;
     text-decoration:underline;
     
 }
 
-#register label{
-    text-align:center;
+#register2 label{
+    text-align:left;
     
     
 }
 
 @media only screen and (max-width:900px){
     
- #register{
+ #register2{
     padding:70% 10% 0% 0%;
     left:5%;
     width:50%;
     position:absolute;
 }
 
-#register h1{
+#register2 h1{
     color:#6D1923;
     font-size:36px;
     text-decoration:underline;
     
 }  
 
-#register label{
+#register2 label{
     text-align:center;
     
 }
@@ -1007,50 +915,24 @@ nav > ul > li:first-child {
     to   { opacity: 1; }
 }
 
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
 #catalogue h1{
     color:#6D1923;
     font-size:36px;
-    text-decoration:underline;
+    text-decoration:none;
+    text-align: center;
     
 }
 
+#appCat{
+    padding:5% 10% 10% 10%;
+    width:100%;
+}
+
+#appCat button{
+   
+}
+
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
@@ -1120,7 +1002,6 @@ nav > ul > li:first-child {
 .prodbtn {
   color: white;
   width:100%;
-  float:center;
   font-size: 20px;
   position: absolute;
   top: 52%;
@@ -1138,7 +1019,6 @@ nav > ul > li:first-child {
     width:110px;
     padding: 5px 5px;
     margin: 8px 0;
-    float: center; 
 	background-color:green;
 	color:white;
 	border-color:white;
@@ -1188,12 +1068,20 @@ nav > ul > li:first-child {
     
 }
 
+#appCat{
+    padding:5% 0% 0% 0%;
+    width:100%;
+}
+
+#appCat button{
+  
+}
+
 .product {
         display: block;
         width: 150%;
         height:150%;
         margin-bottom: 15px;
-        float: center;
     }
     
 .product img{
@@ -1224,7 +1112,7 @@ nav > ul > li:first-child {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 200px;
+  height: 215px;
   width: auto;
   opacity: 0;
   transition: .5s ease;
@@ -1238,7 +1126,6 @@ nav > ul > li:first-child {
 .prodbtn {
   color: white;
   width:100%;
-  float:center;
   font-size: 20px;
   position: absolute;
   top: 40%;
@@ -1251,8 +1138,6 @@ nav > ul > li:first-child {
 	display:inline-block;
     width:110px;
     left: 50%;
-    
-    float: center; 
 	background-color:green;
 	color:white;
 	border-color:white;
@@ -1319,28 +1204,34 @@ nav > ul > li:first-child {
 }
 
 /*-----------------admin--------------------*/
+
+
 #app{
-    width:100%;
-    float:center;
-    position:re;
+    padding:20% 10% 10% 20%;
+    text-align: left;
+    height:30%;
+    position:relative;
         -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
          -o-animation: fadein 3s; /* Opera < 12.1 */
             animation: fadein 3s;
+    
 }
-    
- #admin{
-    padding:20% 0% 0% 0%;
-    text-align: center;
-    width:100%;
-    position:absolute;
-        -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 3s; /* Firefox < 16 */
-        -ms-animation: fadein 3s; /* Internet Explorer */
-         -o-animation: fadein 3s; /* Opera < 12.1 */
-            animation: fadein 3s;
-    
+
+#app h1 {
+    font-size: 4.0rem !important;
+    line-height: 1.2  !important;
+    letter-spacing: -.1rem !important;
+    color:#6D1923 !important;
+}
+
+th {
+    color: #6D1923;
+}
+
+#data{
+    background-color: white;
 }
 
 #adminlog{
@@ -1358,21 +1249,11 @@ nav > ul > li:first-child {
 @media only screen and (max-width:900px){
  
 #app{
-    width:100%;
-    float:center;
-    position:re;
-        -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 3s; /* Firefox < 16 */
-        -ms-animation: fadein 3s; /* Internet Explorer */
-         -o-animation: fadein 3s; /* Opera < 12.1 */
-            animation: fadein 3s;
-}
-    
- #admin{
-    padding:70% 0% 0% 0%;
-    text-align: center;
-    width:100%;
-    position:absolute;
+    padding:70% 10% 10% 0%;
+    width:80%;
+    text-align: left;
+    left:3%;
+    position:relative;
         -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
@@ -1381,6 +1262,26 @@ nav > ul > li:first-child {
     
 }
 
+#app h1 {
+    font-size: 3.0rem !important;
+    line-height: 1.2  !important;
+    letter-spacing: -.1rem !important;
+    color:#6D1923 !important;
+}
+
+th {
+    color: #6D1923;
+    font-size: 11px;
+}
+
+#data{
+    background-color: white;
+    font-size: 8px;
+}
+
+#data img{
+    width:90%;
+}
 #adminlog{
     visibility: hidden;
 }

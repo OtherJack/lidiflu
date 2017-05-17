@@ -1,6 +1,11 @@
-<html>
+<!--Jack Sweeney-->
+<!--Lidiflu------->
+
+<!DOCTYPE html>
+<html id="html">
 
     <head>
+        <meta charset="UTF-8">
         <link rel="icon" href="img/logo.png" type="image/gif" sizes="16x16">
         <title>Lidiflu | Log In</title>
         <link rel="stylesheet" href="css/style.css">
@@ -9,13 +14,16 @@
         <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+    
+    <body>
 
 <div id="indexContainer">
 
-    <body>
+    
         
     <div id="menuButton">
-        
+    
+    <!--Fade-in menu present on every page-->
         <nav>
    <ul>
      <li class="sub-menu-parent">
@@ -23,12 +31,12 @@
        <ul class="sub-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="aboutUs.html">About Us</a></li>
-        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="php/rest/catalogue.html">Catalogue</a></li>
         <li><a href="news.html">News</a></li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="logIn.html">Log In</a></li>
-        <li><a href="https://en-gb.facebook.com/"><img src="img/fB.png" alt="facebook" width="30%" height="4%"></a>
-        <a href="https://twitter.com/?lang=en"><img src="img/Twitter.png" alt="twitter" width="30%" height="4%"></a></li>
+        <li><a href="https://en-gb.facebook.com/"><img src="img/fB.png" alt="facebook"></a>
+        <a href="https://twitter.com/?lang=en"><img src="img/Twitter.png" alt="twitter"></a></li>
        </ul>
      </li>
    </ul>
@@ -38,7 +46,7 @@
         
         <div id="logo">
 
-        <a href="index.html"><img src="img/Logo3.png"></a>
+        <a href="index.html"><img src="img/Logo3.png" alt="logo"></a>
 
         </div>
         
@@ -47,7 +55,8 @@
             
             <h1>Log In</h1>
             
-            <form id="login" action="./php/login2.php" method="post">
+            <!--Log in form, linking to login.php-->
+            <form id="login" action="php/login2.php" method="post">
 			
 			<label>Username:</label>
 			<input type="text" size="40" id="userName" name="userName">
@@ -67,7 +76,7 @@
             
         </div>
 
-
+    </div>
     </body>
-</div>
+
 </html>

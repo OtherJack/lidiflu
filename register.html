@@ -1,22 +1,29 @@
+<!--Jack Sweeney-->
+<!--Lidiflu------->
+
 <!DOCTYPE html>
-<html>
+<html id="html">
 
     <head>
+        <meta charset="UTF-8">
         <link rel="icon" href="img/logo.png" type="image/gif" sizes="16x16">
         <title>Lidiflu | Register</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/skeleton.css">
-        
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+    
+    <body>
 
 <div id="indexContainer">
 
-    <body>
+    
         
         <div id="menuButton">
+            
+            <!--Fade-in menu present on every page-->
         
         <nav>
    <ul>
@@ -25,12 +32,12 @@
        <ul class="sub-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="aboutUs.html">About Us</a></li>
-        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="php/rest/catalogue.html">Catalogue</a></li>
         <li><a href="news.html">News</a></li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="logIn.html">Log In</a></li>
-        <li><a href="https://en-gb.facebook.com/"><img src="img/fB.png" alt="facebook" width="30%" height="30%"></a>
-        <a href="https://twitter.com/?lang=en"><img src="img/Twitter.png" alt="twitter" width="30%" height="30%"></a></li>
+        <li><a href="https://en-gb.facebook.com/"><img src="img/fB.png" alt="facebook"></a>
+        <a href="https://twitter.com/?lang=en"><img src="img/Twitter.png" alt="twitter"></a></li>
        </ul>
      </li>
    </ul>
@@ -40,14 +47,15 @@
         
         <div id="logo">
 
-        <a href="index.html"><img src="img/Logo3.png"></a>
+        <a href="index.html"><img src="img/Logo3.png" alt="logo"></a>
 
         </div>
         
-        <div id="register">
+        <div id="register2">
             
             <h1>Register</h1>
 			
+			<!--register form linking to connect.php-->
 			<form id="register" action="php/connect.php" method ="post">
 			
 			<label>First Name:</label>
@@ -63,21 +71,22 @@
 			<input type="email" size="40" id="Email" name="email">
 			
 			<label> Would you like to recieve news and offers? </label>
-			<input type="radio" name="newslist" value="Yes" id="news"><b> Yes</b><br>
-            <input type="radio" name="newslist" value="No" id="news"><b> No</b><br>
+			<input type="radio" name="newslist" value="Yes" id="newsl"><b> Yes</b><br>
+            <input type="radio" name="newslist" value="No" id="newsli"><b> No</b><br>
 			
 			<label> Password: </label>
 			<input type="password" size="40" id="password" name="password"><br>
 			
-			<button type="submit">Submit</button><br>
+			<button type="submit">Submit</button></form><br>
 			
         
             
         </div>
 
 
-    <footer></footer>
+
+</div>
 
     </body>
-</div>
+
 </html>
