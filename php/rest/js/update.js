@@ -7,7 +7,7 @@ $(document).ready(function(){
           $("h1").html("Update Product");
       
         // read one record based on given product id
-        $.getJSON("https://lidiflu-otherjack.c9users.io/php/rest/readOne.php?id=" +id, function(data){
+        $.getJSON("https://lidiflu-otherjack.c9users.io/php/rest/php/readOne.php?id="+id, function(data){
  
         // values will be used to fill out our form
        var name = data.name;
@@ -40,10 +40,10 @@ $(document).ready(function(){
  
         
         // image_path
-        update_product +="<tr>";
-        update_product +="<td>The image path</td>";
-        update_product +="<td><input value=\"" + image_path + "\" type='text'  name='image_path' class='form-control' required readonly /></td>";
-        update_product +="</tr>";
+        update_product +="<tr>"
+        update_product +="<td> Photo </td>"
+        update_product +="<td><input type='file' name='image_path' class='form-control' required /></td>"
+        update_product +="</tr>"
  
         // hidden 'product id' to identify which record to delete
         update_product +="<tr>";
@@ -53,6 +53,14 @@ $(document).ready(function(){
         update_product +="<td>";
         update_product +="<button type='submit' class='btn btn-info'>";
         update_product +="Update Product";
+        update_product +="</button>";
+        update_product +="</td>";
+        update_product +="</tr>";
+        
+        // button to return to form
+        update_product +="<td>";
+        update_product +="<button type='submit' class='btn btn-info' href='index.html'>";
+        update_product +="Back";
         update_product +="</button>";
         update_product +="</td>";
         update_product +="</tr>";
@@ -73,7 +81,7 @@ $(document).ready(function(){
          var form_data = JSON.stringify($(this).serializeObject());
          // submit form data to api
          $.ajax({
-          url: "https://lidiflu-otherjack.c9users.io/php/rest/update.php",
+          url: "https://lidiflu-otherjack.c9users.io/php/rest/php/update.php",
          type: "POST",
          contentType: 'application/json',
          data: form_data,

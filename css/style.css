@@ -467,17 +467,9 @@ nav > ul > li:first-child {
     
 }
 
-#indexCat{
-    padding:20% 10% 15% 5%;
-    left:5%;
-    width:90%;
-    position:absolute;
-        -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 3s; /* Firefox < 16 */
-        -ms-animation: fadein 3s; /* Internet Explorer */
-         -o-animation: fadein 3s; /* Opera < 12.1 */
-            animation: fadein 3s;
-    
+#index img{
+    width:70%;
+    height:70%;
 }
 
 @keyframes fadein {
@@ -489,8 +481,9 @@ nav > ul > li:first-child {
 
  #index{
     padding:90% 0% 0% 0%;
-    float:left;
-    width:100%;
+    right:20%;
+    width:80%;
+    font-size: 16px;
     position:absolute;
         -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -499,6 +492,8 @@ nav > ul > li:first-child {
             animation: fadein 3s;
     
 }
+
+
 }
 
 /*----------------------------------------*/
@@ -528,6 +523,11 @@ nav > ul > li:first-child {
     color:#6D1923;
     font-size:36px;
     text-decoration:underline;
+    
+}
+
+#aboutUs p{
+    font-size:18px;
     
 }
 
@@ -929,6 +929,7 @@ nav > ul > li:first-child {
 }
 
 #appCat button{
+   color:blue;
    
 }
 
@@ -945,7 +946,7 @@ nav > ul > li:first-child {
 }
 
 .product {
-    
+    padding:10px 10px 10px 10px;
   	width: 25%;
 	height:40%;
 	display:table-cell;
@@ -965,7 +966,7 @@ nav > ul > li:first-child {
 .product img{
 	width: 100%;
 	margin:auto;
-	height:200px;
+	height:100%;
 	
 }
 
@@ -988,7 +989,7 @@ nav > ul > li:first-child {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 200px;
+  height: 100%;
   width: auto;
   opacity: 0;
   transition: .5s ease;
@@ -1000,14 +1001,26 @@ nav > ul > li:first-child {
 }
 
 .prodbtn {
-  color: white;
-  width:100%;
-  font-size: 20px;
-  position: absolute;
-  top: 52%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+    display:inline-block;
+    width:110px;
+    padding: 5px 5px;
+    left:20%;
+    margin: 8px 0;
+	background-color:green;
+	color:white;
+	border-color:white;
+	
+}
+
+.prodbtn a{
+    color:white;
+} 
+prodbtn a:hover{
+    color:white;
+}
+
+prodbtn:hover{
+    color:red;
 }
 .productDescription{
 	padding: 2px 16px;
@@ -1018,6 +1031,7 @@ nav > ul > li:first-child {
 	display:inline-block;
     width:110px;
     padding: 5px 5px;
+    left:10%;
     margin: 8px 0;
 	background-color:green;
 	color:white;
@@ -1068,19 +1082,10 @@ nav > ul > li:first-child {
     
 }
 
-#appCat{
-    padding:5% 0% 0% 0%;
-    width:100%;
-}
-
-#appCat button{
-  
-}
-
 .product {
         display: block;
-        width: 150%;
-        height:150%;
+        width: 100%;
+        height:100%;
         margin-bottom: 15px;
     }
     
@@ -1112,7 +1117,7 @@ nav > ul > li:first-child {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 215px;
+  height: 100%;
   width: auto;
   opacity: 0;
   transition: .5s ease;
@@ -1126,30 +1131,14 @@ nav > ul > li:first-child {
 .prodbtn {
   color: white;
   width:100%;
-  font-size: 20px;
-  position: absolute;
-  top: 40%;
-  left: 62%;
+  font-size: 11px;
+  position: fixed;
+  right:50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
 
-.btn-p{
-	display:inline-block;
-    width:110px;
-    left: 50%;
-	background-color:green;
-	color:white;
-	border-color:white;
-	
-}
 
-.btn-p:hover{
-	background-color: #6D1923 !important;
-	color: white ; 
-	text-decoration:none;
-	
-}
 
 .productList a {
     text-decoration: none;
@@ -1207,9 +1196,10 @@ nav > ul > li:first-child {
 
 
 #app{
-    padding:20% 10% 10% 20%;
+    padding:20% 10% 10% 10%;
     text-align: left;
-    height:30%;
+    height:50%;
+    width:80%;
     position:relative;
         -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -1233,6 +1223,10 @@ th {
 #data{
     background-color: white;
 }
+#data img{
+    width:10%;
+    height:2%;
+}
 
 #adminlog{
     visibility: hidden;
@@ -1250,15 +1244,16 @@ th {
  
 #app{
     padding:70% 10% 10% 0%;
-    width:80%;
+    width:60%;
     text-align: left;
-    left:3%;
+    left:25%;
     position:relative;
         -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
          -o-animation: fadein 3s; /* Opera < 12.1 */
             animation: fadein 3s;
+            
     
 }
 
@@ -1269,18 +1264,53 @@ th {
     color:#6D1923 !important;
 }
 
-th {
-    color: #6D1923;
-    font-size: 11px;
+#app table {
+    
+   
+
 }
 
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+		padding-bottom:10px;
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+		padding-bottom:50px;
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
 #data{
     background-color: white;
-    font-size: 8px;
+    font-size: 12px;
 }
 
 #data img{
-    width:90%;
+    width:100%;
+    height:100%;
 }
 #adminlog{
     visibility: hidden;
@@ -1294,4 +1324,16 @@ th {
     
 }
     
+}
+
+/*--------------------Footer----------------------*/
+
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background-color: white;
+   
 }

@@ -1,0 +1,45 @@
+/* TEAM */
+
+        Designed and Developed 
+        by Jack Sweeney
+        jacksweeney@outlook.com
+        Glasgow Clyde College
+        Glasgow, UK
+        
+/* THANKS */
+
+        Additional Help
+        
+        Stefan Dalgarno
+        Glasgow Clyde College
+        
+        Dave Ball
+        Glasgow Clyde College
+        
+        Angeline Nesbitt
+        Glasgow Clyde College
+        
+                  
+        CSS 
+        
+        Skeleton.css
+        getskeleton.com
+        
+        Bootstrap.css
+        getbootstrap.com
+        
+        
+        JavaScript
+        
+        simplecart.js
+        simplecartjs.com
+        
+        Datasheet
+        Raum Energy
+        
+        
+/* SITE */
+	Last update: 18/05/2017
+	Language: English
+	Doctype:HTML5
+	IDE: Cloud9, Notepad++, Figma

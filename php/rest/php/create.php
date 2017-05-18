@@ -1,7 +1,7 @@
 <?php
 // include database and object files
-include_once '../config/database.php';
-include_once '../objects/product.php';
+include_once 'database.php';
+include_once 'product.php';
 // get database connection
 $database = new Database();
 $db = $database->getConnection();
@@ -17,35 +17,18 @@ $product = new Product($db);
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
- 
-    <title>Craete Products</title>
- 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
+    <link rel="icon" href="../../img/logo.png" type="image/gif" sizes="16x16">
+    <title>Lidiflu | Admin</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/skeleton.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
-    <!-- latest Bootbox library . Must ensure that students add this library - libraries must be entered in the right order-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
-    
-    <!-- function to make form values to json format -->
-    <script src="important.js"></script>
-    
-    <!-- app js script -->
-    <script src="product/read-products.js"></script>
-   
-    <!-- app js script -->
-    <script src="product/read-one-product.js"></script>
-    
-    <!-- update-product js script -->
-    <script src="product/update-product.js"></script>
-    
-    <!-- delete-product js script -->
-    <script src="product/delete-product.js"></script>
+    <script src="../js/read.js"></script>
+    <script src="../js/read-one-product.js"></script>
+    <script src="../js/update.js"></script>
+    <script src="../js/create-product.js"></script>
+    <script src="../js/important.js"></script>
     
 </head>
 <body>
@@ -90,7 +73,7 @@ $product = new Product($db);
             <!--Submit Button-->
              <tr>
               <td></td>
-              <td><button type="submit" class="btn btn-primary"><span class='glyphicon glyphicon-plus'></span> Create Product</button></td>
+              <td><button type="submit" class="btn btn-primary">Create Product</button></td>
               </tr>
          
             
@@ -103,7 +86,7 @@ $product = new Product($db);
 <?php
 
 echo "<div class='right-button-margin'>";
-    echo "<a href='https://rest-api-angeline80.c9users.io/' class='btn btn-primary'> <span class='glyphicon glyphicon-list'> </span>View all Product</a>";
+    echo "<a href='https://lidiflu-otherjack.c9users.io/php/rest/admin.html' class='btn btn-primary'>Back</a>";
 echo "</div>";
 
 ?>

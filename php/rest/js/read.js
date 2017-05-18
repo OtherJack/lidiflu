@@ -9,7 +9,7 @@ showProducts();
  function showProducts(){
    // Call REST API  to get the list of products
    
-   $.getJSON('https://rest-api-angeline80.c9users.io/product/read.php', function (data){
+   $.getJSON('https://lidiflu-otherjack.c9users.io/php/rest/php/read.php', function (data){
        productListSuccess(data);
    });
      
@@ -32,14 +32,14 @@ showProducts();
           
           // image's location
         read_products_html+="<td>";
-        read_products_html+="<img class='thumnbail' width='75' height='50' src='images/" + val.image_path + "'/>";
+        read_products_html+="<img class='thumnbail' width='75' alt='admin Product' height='50' src='images/" + val.image_path + "'/>";
         read_products_html +="</td>";
         
         
         // read one product
         read_products_html+="<td>";
         read_products_html+="<button class='btn btn-primary btn-md read-one-product-button' data-id='" + val.id + "'>";
-        read_products_html+="<span class='glyphicon glyphicon-edit'></span> Read";
+        read_products_html+="Info";
         read_products_html+="</button>";
         read_products_html+="</td>";
         
@@ -47,14 +47,14 @@ showProducts();
         // edit button
         read_products_html+="<td>";
         read_products_html+="<button class='btn btn-info update-product-button btn-md' data-id='" + val.id + "'>";
-        read_products_html+="<span class='glyphicon glyphicon-edit'></span> Edit";
+        read_products_html+="Edit";
         read_products_html+="</button>";
         read_products_html+="</td>";
         
         // delete button
         read_products_html+="<td>";
         read_products_html+="<button class='btn btn-danger btn-md delete-product-button' data-id='" + val.id + "'>";
-        read_products_html+="<span class='glyphicon glyphicon-remove'></span> Delete";
+        read_products_html+="Delete";
         read_products_html+="</button>";
         read_products_html+="</td>";
            

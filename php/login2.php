@@ -28,11 +28,11 @@ if ($conn->connect_error) {
 
 		 
 			if($row['user']=="Admin"){
-			   header('location:rest/index.html');
+			   header('location:rest/admin.html');
 			   exit();
 			}
 			else if($row['user']=="User"){
-				header('Location:rest/catalogue.html');
+				header('Location:../catalogue.html');
 				exit();
 			}
 			else 

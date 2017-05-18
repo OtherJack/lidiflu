@@ -6,7 +6,7 @@ $(document).ready(function(){
                   $(".row").hide();
                   $("h1").html("Read One Single Product");
                   var id = $(this).attr('data-id');
-                  $.getJSON("https://lidiflu-otherjack.c9users.io/php/rest/readOne.php?id=" + id, function(data){
+                  $.getJSON("https://lidiflu-otherjack.c9users.io/php/rest/php/readOne.php?id=" + id, function(data){
                 
                     // start html
                    var read_one_product="";
